@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Listado de alumnos</title>
+  </head>
+  <body>
+
+    <h1>Listado de alumnos</h1>
+
+    <table border="1">
+      <tr>
+        <th>Nombre</th>
+        <th>Colegio</th>
+        <th>Email</th>
+      </tr>
+
+      {% for alumno in alumnos %}
+      <tr>
+        <td>{{ alumno.nombre_completo | escape }}</td>
+        <td>{{ alumno.colegio | escape }}</td>
+        <td>{{ alumno.email | escape }}</td>
+      </tr>
+      {% endfor %}
+  </body>
+</html>
