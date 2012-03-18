@@ -1,24 +1,29 @@
-<html>
-  <head>
-    <title>Listado de alumnos</title>
-  </head>
-  <body>
+{% extends "base.html" %}
+
+{% block pagetitle %}Listado de alumnos{% endblock %}
+
+{% block content %}
 
     <h1>Listado de alumnos</h1>
 
-    <table border="1">
-      <tr>
-        <th>Nombre</th>
-        <th>Colegio</th>
-        <th>Email</th>
-      </tr>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Colegio</th>
+          <th>Email</th>
+        </tr>
+      </thead>
 
-      {% for alumno in alumnos %}
-      <tr>
-        <td>{{ alumno.nombre_completo }}</td>
-        <td>{{ alumno.colegio }}</td>
-        <td>{{ alumno.email }}</td>
-      </tr>
-      {% endfor %}
-  </body>
-</html>
+      <tbody>
+        {% for alumno in alumnos %}
+        <tr>
+          <td>{{ alumno.nombre_completo }}</td>
+          <td>{{ alumno.colegio }}</td>
+          <td>{{ alumno.email }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+{% endblock %}
