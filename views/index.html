@@ -8,6 +8,7 @@
 
     <table border="1">
       <tr>
+        <th>Id</th>
         <th>Nombre</th>
         <th>Colegio</th>
         <th>Email</th>
@@ -15,6 +16,7 @@
 
       {% for alumno in alumnos %}
       <tr>
+        <td>{{ alumno.key().id() }}</td>
         <td>{{ alumno.nombre_completo | escape }}</td>
         <td>{{ alumno.colegio | escape }}</td>
         <td>{{ alumno.email | escape }}</td>
