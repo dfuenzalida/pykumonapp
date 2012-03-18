@@ -2,7 +2,6 @@ from google.appengine.api import datastore
 
 import models.Alumno
 
-import jinja2
 import os
 import webapp2
 
