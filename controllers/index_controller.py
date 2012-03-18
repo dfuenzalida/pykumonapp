@@ -15,7 +15,7 @@ class IndexController(BaseController):
         alumnos = datastore.Query("Alumno", _namespace=None).Get(100)
         self.render('index', {'alumnos': alumnos})
         
-application = webapp2.WSGIApplication([('/lista', IndexController)],
+application = webapp2.WSGIApplication([('/', IndexController)],
                               debug=True)
 
 def main():

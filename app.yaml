@@ -4,9 +4,7 @@ runtime: python
 api_version: 1
 
 handlers:
-- url: /lista
+- url: /
   script: controllers/index_controller.py
 
-- url: /
-  script: helloworld.py
 
