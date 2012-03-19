@@ -6,7 +6,7 @@
 
     <h1>Listado de alumnos</h1>
 
-    <table class="table table-bordered">
+    <table class="table table-bordered table-striped">
       <thead>
         <tr>
           <th>Nombre</th>
@@ -25,5 +25,11 @@
         {% endfor %}
         </tbody>
       </table>
+      
+      {% for i in numeros %}
+      <p>
+      Hamburger corned beef tail jerky. Salami cow venison chicken speck biltong. Venison meatloaf pork loin, frankfurter capicola corned beef brisket tri-tip cow leberkas flank sausage tenderloin shoulder rump. Leberkas swine prosciutto, pig meatloaf venison rump pork chop capicola shankle flank shoulder speck. Chuck hamburger andouille, ribeye sirloin corned beef pancetta bresaola. Andouille chicken filet mignon swine, ground round t-bone pastrami hamburger meatball pork belly ribeye capicola ball tip.
+      </p>
+      {% endfor %}
 
 {% endblock %}
