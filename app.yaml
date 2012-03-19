@@ -7,6 +7,9 @@ handlers:
 - url: /
   script: controllers/index_controller.py
   
+- url: /add
+  script: controllers/index_controller.py
+  
 - url: /assets
   static_dir: public
 
