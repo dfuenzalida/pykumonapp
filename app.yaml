@@ -7,15 +7,9 @@ handlers:
 - url: /
   script: controllers/index_controller.py
   
-- url: /css
-  static_dir: public/css
-  
-- url: /js
-  static_dir: public/js
-  
-- url: /images
-  static_dir: public/images
-  
+- url: /assets
+  static_dir: public
+
 
 
 
